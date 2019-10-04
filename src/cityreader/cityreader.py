@@ -6,11 +6,7 @@ class City():
         self.name = name
         self.lat = lat
         self.lon = lon
-    
-    def __str__(self):
-        return "name: "+str(self.name) \
-            + "\nlat: "+str(self.lat) \
-            + "\nlon: "+str(self.lon)
+
 
 # We have a collection of US cities with population over 750,000 stored in the
 # file "cities.csv". (CSV stands for "comma-separated values".)
@@ -42,7 +38,7 @@ cityreader(cities)
 
 # Print the list of cities (name, lat, lon), 1 record per line.
 for c in cities:
-    print(c)
+    print(c.name, c.lat, c.lon)
 
 # STRETCH GOAL!
 #
